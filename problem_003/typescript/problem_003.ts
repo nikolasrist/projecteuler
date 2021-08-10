@@ -3,16 +3,6 @@
  * What is the largest prime factor of the number 600851475143 ?
  */
 
-function isPrime(value: number): boolean {
-  const squrtValue = Math.sqrt(value);
-  for (let index = 2; index < squrtValue; index++) {
-    if (value % index === 0) {
-      return false;
-    }
-  }
-  return true;
-}
-
 function main() {
   let value = 600851475143;
   const factors: number[] = [];
@@ -25,12 +15,7 @@ function main() {
     factor++;
   }
   factors.sort((a, b) => a - b);
-  const primeFactors = factors.filter((value) => isPrime(value));
-  console.log(
-    `Factors: ${factors}\nPrimeFactors: ${primeFactors}\nMax: ${
-      factors[factors.length - 1]
-    }`
-  );
+  console.log(`Factors: ${factors}\nMax: ${factors[factors.length - 1]}`);
 }
 
 main();
