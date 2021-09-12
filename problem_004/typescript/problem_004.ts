@@ -5,7 +5,7 @@ function isPalindrome(value: number): boolean {
   return value === reverseNumber;
 }
 
-function main(): void {
+export function main(): void {
   let currentMax = 0;
   for (let outerIndex = 999; outerIndex >= 100; outerIndex--) {
     for (let index = 999; index >= 100; index--) {

@@ -3,7 +3,7 @@
  * What is the largest prime factor of the number 600851475143 ?
  */
 
-function main() {
+export function main() {
   let value = 600851475143;
   const factors: number[] = [];
   let factor = 2;

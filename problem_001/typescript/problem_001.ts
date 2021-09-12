@@ -1,4 +1,4 @@
-function main() {
+export function main() {
   const sequence = Array.from(Array(1000).keys());
 
   const result = sequence.reduce(
